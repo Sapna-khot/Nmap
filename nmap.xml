@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet href="file:///E:/Program Files (x86)/Nmap/nmap.xsl" type="text/xsl"?><nmaprun args="nmap -p 1-65535 -T4 -A -v 192.168.43.158" profile_name="Intense scan, all TCP ports" scanner="nmap" start="1758554344" startstr="Mon Sep 22 20:49:04 2025" version="7.97" xmloutputversion="1.04"><scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"></scaninfo><verbose level="1"></verbose><debugging level="0"></debugging><output type="interactive">Starting Nmap 7.97 ( https://nmap.org ) at 2025-09-22 20:49 +0530
+NSE: Loaded 158 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 20:49
+Completed NSE at 20:49, 0.00s elapsed
+Initiating NSE at 20:49
+Completed NSE at 20:49, 0.00s elapsed
+Initiating NSE at 20:49
+Completed NSE at 20:49, 0.00s elapsed
+Initiating Parallel DNS resolution of 1 host. at 20:49
+Completed Parallel DNS resolution of 1 host. at 20:49, 0.51s elapsed
+Initiating SYN Stealth Scan at 20:49
+Scanning 192.168.43.158 [65535 ports]
+Discovered open port 445/tcp on 192.168.43.158
+Discovered open port 139/tcp on 192.168.43.158
+Discovered open port 135/tcp on 192.168.43.158
+Discovered open port 49668/tcp on 192.168.43.158
+Discovered open port 902/tcp on 192.168.43.158
+Discovered open port 49666/tcp on 192.168.43.158
+Discovered open port 49665/tcp on 192.168.43.158
+Discovered open port 49669/tcp on 192.168.43.158
+Discovered open port 49664/tcp on 192.168.43.158
+Discovered open port 912/tcp on 192.168.43.158
+Discovered open port 49667/tcp on 192.168.43.158
+Discovered open port 5040/tcp on 192.168.43.158
+Completed SYN Stealth Scan at 20:49, 5.20s elapsed (65535 total ports)
+Initiating Service scan at 20:49
+Scanning 12 services on 192.168.43.158
+Service scan Timing: About 50.00% done; ETC: 20:51 (0:00:53 remaining)
+Completed Service scan at 20:50, 83.77s elapsed (12 services on 1 host)
+Initiating OS detection (try #1) against 192.168.43.158
+Retrying OS detection (try #2) against 192.168.43.158
+Retrying OS detection (try #3) against 192.168.43.158
+Retrying OS detection (try #4) against 192.168.43.158
+Retrying OS detection (try #5) against 192.168.43.158
+NSE: Script scanning 192.168.43.158.
+Initiating NSE at 20:50
+Completed NSE at 20:51, 14.27s elapsed
+Initiating NSE at 20:51
+Completed NSE at 20:51, 0.19s elapsed
+Initiating NSE at 20:51
+Completed NSE at 20:51, 0.01s elapsed
+Nmap scan report for 192.168.43.158
+Host is up (0.00060s latency).
+Not shown: 65522 closed tcp ports (reset)
+PORT      STATE    SERVICE         VERSION
+135/tcp   open     msrpc           Microsoft Windows RPC
+137/tcp   filtered netbios-ns
+139/tcp   open     netbios-ssn     Microsoft Windows netbios-ssn
+445/tcp   open     microsoft-ds?
+902/tcp   open     ssl/vmware-auth VMware Authentication Daemon 1.10 (Uses VNC, SOAP)
+912/tcp   open     vmware-auth     VMware Authentication Daemon 1.0 (Uses VNC, SOAP)
+5040/tcp  open     unknown
+49664/tcp open     msrpc           Microsoft Windows RPC
+49665/tcp open     msrpc           Microsoft Windows RPC
+49666/tcp open     msrpc           Microsoft Windows RPC
+49667/tcp open     msrpc           Microsoft Windows RPC
+49668/tcp open     msrpc           Microsoft Windows RPC
+49669/tcp open     msrpc           Microsoft Windows RPC
+No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
+TCP/IP fingerprint:
+OS:SCAN(V=7.97%E=4%D=9/22%OT=135%CT=1%CU=34603%PV=Y%DS=0%DC=L%G=Y%TM=68D169
+OS:5F%P=i686-pc-windows-windows)SEQ(SP=105%GCD=1%ISR=107%TI=I%CI=I%II=I%SS=
+OS:S%TS=A)SEQ(SP=105%GCD=1%ISR=108%TI=I%CI=I%II=I%SS=S%TS=A)SEQ(SP=105%GCD=
+OS:1%ISR=10B%TI=I%CI=I%II=I%SS=S%TS=A)SEQ(SP=105%GCD=1%ISR=10C%TI=I%CI=I%II
+OS:=I%SS=S%TS=A)SEQ(SP=FD%GCD=1%ISR=103%TI=I%CI=I%II=I%SS=S%TS=A)OPS(O1=MFF
+OS:D7NW8ST11%O2=MFFD7NW8ST11%O3=MFFD7NW8NNT11%O4=MFFD7NW8ST11%O5=MFFD7NW8ST
+OS:11%O6=MFFD7ST11)WIN(W1=FFFF%W2=FFFF%W3=FFFF%W4=FFFF%W5=FFFF%W6=FFFF)ECN(
+OS:R=Y%DF=Y%T=80%W=FFFF%O=MFFD7NW8NNS%CC=N%Q=)T1(R=Y%DF=Y%T=80%S=O%A=S+%F=A
+OS:S%RD=0%Q=)T2(R=Y%DF=Y%T=80%W=0%S=Z%A=S%F=AR%O=%RD=0%Q=)T3(R=Y%DF=Y%T=80%
+OS:W=0%S=Z%A=O%F=AR%O=%RD=0%Q=)T4(R=Y%DF=Y%T=80%W=0%S=A%A=O%F=R%O=%RD=0%Q=)
+OS:T5(R=Y%DF=Y%T=80%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T6(R=Y%DF=Y%T=80%W=0%S=A%A
+OS:=O%F=R%O=%RD=0%Q=)T7(R=Y%DF=Y%T=80%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)U1(R=Y%D
+OS:F=N%T=80%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=Z%RUCK=G%RUD=G)IE(R=Y%DFI=N%T=8
+OS:0%CD=Z)
+
+Uptime guess: 1.153 days (since Sun Sep 21 17:11:14 2025)
+Network Distance: 0 hops
+TCP Sequence Prediction: Difficulty=253 (Good luck!)
+IP ID Sequence Generation: Incremental
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+| smb2-time: 
+|   date: 2025-09-22T15:20:53
+|_  start_date: N/A
+| smb2-security-mode: 
+|   3.1.1: 
+|_    Message signing enabled but not required
+
+NSE: Script Post-scanning.
+Initiating NSE at 20:51
+Completed NSE at 20:51, 0.00s elapsed
+Initiating NSE at 20:51
+Completed NSE at 20:51, 0.00s elapsed
+Initiating NSE at 20:51
+Completed NSE at 20:51, 0.00s elapsed
+Read data files from: E:\Program Files (x86)\Nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 119.58 seconds
+           Raw packets sent: 65616 (2.891MB) | Rcvd: 131502 (5.531MB)
+</output><host comment=""><status state="up"></status><address addr="192.168.43.158" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports><extraports count="65522" state="closed"></extraports><port portid="135" protocol="tcp"><state state="open" reason="syn-ack" reason_ttl="128"></state><service conf="10" method="probed" name="msrpc" product="Microsoft Windows RPC"></service></port><port portid="137" protocol="tcp"><state state="filtered" reason="no-response" reason_ttl="0"></state><service conf="3" method="table" name="netbios-ns"></service></port><port portid="139" protocol="tcp"><state state="open" reason="syn-ack" reason_ttl="128"></state><service conf="10" method="probed" name="netbios-ssn" product="Microsoft Windows netbios-ssn"></service></port><port portid="445" protocol="tcp"><state state="open" reason="syn-ack" reason_ttl="128"></state><service conf="3" method="table" name="microsoft-ds"></service></port><port portid="902" protocol="tcp"><state state="open" reason="syn-ack" reason_ttl="128"></state><service conf="10" method="probed" name="vmware-auth" product="VMware Authentication Daemon" version="1.10" extrainfo="Uses VNC, SOAP"></service></port><port portid="912" protocol="tcp"><state state="open" reason="syn-ack" reason_ttl="128"></state><service conf="10" method="probed" name="vmware-auth" product="VMware Authentication Daemon" version="1.0" extrainfo="Uses VNC, SOAP"></service></port><port portid="5040" protocol="tcp"><state state="open" reason="syn-ack" reason_ttl="128"></state><service></service></port><port portid="49664" protocol="tcp"><state state="open" reason="syn-ack" reason_ttl="128"></state><service conf="10" method="probed" name="msrpc" product="Microsoft Windows RPC"></service></port><port portid="49665" protocol="tcp"><state state="open" reason="syn-ack" reason_ttl="128"></state><service conf="10" method="probed" name="msrpc" product="Microsoft Windows RPC"></service></port><port portid="49666" protocol="tcp"><state state="open" reason="syn-ack" reason_ttl="128"></state><service conf="10" method="probed" name="msrpc" product="Microsoft Windows RPC"></service></port><port portid="49667" protocol="tcp"><state state="open" reason="syn-ack" reason_ttl="128"></state><service conf="10" method="probed" name="msrpc" product="Microsoft Windows RPC"></service></port><port portid="49668" protocol="tcp"><state state="open" reason="syn-ack" reason_ttl="128"></state><service conf="10" method="probed" name="msrpc" product="Microsoft Windows RPC"></service></port><port portid="49669" protocol="tcp"><state state="open" reason="syn-ack" reason_ttl="128"></state><service conf="10" method="probed" name="msrpc" product="Microsoft Windows RPC"></service></port></ports><os><portused state="open" proto="tcp" portid="135"></portused><portused state="closed" proto="tcp" portid="1"></portused><portused state="closed" proto="udp" portid="34603"></portused><osmatch name="Microsoft Windows 10 1607 - 11 23H2" accuracy="99" line="74791"><osclass vendor="Microsoft" osfamily="Windows" type="general purpose" osgen="11" accuracy="99"></osclass></osmatch><osmatch name="Microsoft Windows 10 1511" accuracy="97" line="74530"><osclass vendor="Microsoft" osfamily="Windows" type="general purpose" osgen="10" accuracy="97"></osclass></osmatch><osmatch name="Windows 11 21H2" accuracy="97" line="75587"><osclass vendor="Microsoft" osfamily="Windows" type="general purpose" osgen="11" accuracy="97"></osclass></osmatch><osmatch name="Windows Server 2022" accuracy="97" line="82130"><osclass vendor="Microsoft" osfamily="Windows" type="general purpose" osgen="2022" accuracy="97"></osclass></osmatch><osmatch name="Microsoft Windows 10 1703" accuracy="96" line="74847"><osclass vendor="Microsoft" osfamily="Windows" type="general purpose" osgen="10" accuracy="96"></osclass></osmatch><osmatch name="Microsoft Windows 10 1703 or Windows 11 21H2" accuracy="96" line="74943"><osclass vendor="Microsoft" osfamily="Windows" type="general purpose" osgen="11" accuracy="96"></osclass></osmatch><osmatch name="Microsoft Windows 10 1703 - 11 21H2" accuracy="95" line="74920"><osclass vendor="Microsoft" osfamily="Windows" type="general purpose" osgen="11" accuracy="95"></osclass></osmatch><osmatch name="Microsoft Windows 11 21H2" accuracy="95" line="75569"><osclass vendor="Microsoft" osfamily="Windows" type="general purpose" osgen="11" accuracy="95"></osclass></osmatch><osmatch name="Microsoft Windows 7 or 8.1 R1" accuracy="94" line="82755"><osclass vendor="Microsoft" osfamily="Windows" type="general purpose" osgen="8.1" accuracy="94"></osclass></osmatch><osmatch name="Microsoft Windows 10 1607" accuracy="94" line="74626"><osclass vendor="Microsoft" osfamily="Windows" type="general purpose" osgen="10" accuracy="94"></osclass></osmatch></os><uptime seconds="99589" lastboot="Sun Sep 21 17:11:14 2025"></uptime><tcpsequence index="253" difficulty="Good luck!" values="839461E4,80B19B22,52F32185,7E8241E7,A00635F2,60CAAFF9"></tcpsequence><ipidsequence class="Incremental" values="799E,79A0,79A2,79A4,79A6,79A8"></ipidsequence><tcptssequence class="1000HZ" values="5EF614B,5EF61BD,5EF622D,5EF62A0,5EF6310,5EF637F"></tcptssequence></host><runstats><finished time="1758554463" timestr="Mon Sep 22 20:51:03 2025"></finished><hosts up="1" down="0" total="1"></hosts></runstats></nmaprun>
