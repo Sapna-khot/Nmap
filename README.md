@@ -19,10 +19,10 @@ Save output as XML (good for scripts):
   nmap -sV -oX scans/output.xml target.example.com
 
 Example (pseudo):
-# uses lxml or xml.etree
-# read scans/output.xml → write ip,port,state,service to results.csv
+ uses lxml or xml.etree
+ read scans/output.xml → write ip,port,state,service to results.csv
 
-# Tips :
+ **Tips :
 
 * Always get permission before scanning.
 * Start small: one host, fewer ports.
