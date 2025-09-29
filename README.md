@@ -1,5 +1,4 @@
-# Cybersecurity-
-# nmap
+# NMAP
 
 What is this?
 Nmap is a tool to discover open ports and services on computers/networks. Use it only on systems you own or have permission to test.
