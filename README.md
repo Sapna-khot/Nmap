@@ -1,5 +1,4 @@
 # Cybersecurity-
-# Day-1
 # nmap
 
 What is this?
