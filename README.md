@@ -21,9 +21,9 @@ Example (pseudo):
  uses lxml or xml.etree
  read scans/output.xml → write ip,port,state,service to results.csv
 
- **Tips :
+ * Tips :
 
-* Always get permission before scanning.
-* Start small: one host, fewer ports.
-* Use -sV to see service names/versions.
-* Keep XML (-oX) if you want to automate parsing later.
+   * Always get permission before scanning.
+   * Start small: one host, fewer ports.
+   * Use -sV to see service names/versions.
+   * Keep XML (-oX) if you want to automate parsing later.
